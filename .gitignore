@@ -1,0 +1,16 @@
+*.pyc
+*.log
+
+.env
+.env.example
+.vscode
+.DS_Store
+.idea/
+settings_local.py
+
+env/
+venv/
+staticfiles/
+__pycache__
+
+_public/
