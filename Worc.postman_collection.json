@@ -1,0 +1,198 @@
+{
+	"info": {
+		"_postman_id": "2baa47b7-02a8-424d-8afd-f8851e69a927",
+		"name": "Worc",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "update",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjM5NTI4MjM4LCJqdGkiOiI1N2MwZTMyNDM4MTI0NTA5YjRhNjc5ZGU0NDc0ZWY4OCIsInVzZXJfaWQiOjF9.2q_xNqztt2nYol_F1tIPrtJTplljZrDLMfLIviKZgNA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"age\": 23\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/candidate/candidates/11/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"candidate",
+						"candidates",
+						"11",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjM5NTI4MjM4LCJqdGkiOiI1N2MwZTMyNDM4MTI0NTA5YjRhNjc5ZGU0NDc0ZWY4OCIsInVzZXJfaWQiOjF9.2q_xNqztt2nYol_F1tIPrtJTplljZrDLMfLIviKZgNA",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Rosa Cecília Rayssa de Paula\",\n    \"email\": \"rosaceciliarayssadepaula-71@platinium.com.br\",\n    \"cpf\": \"30626191637\",\n    \"age\": 36,\n    \"salary_claim\": 9563\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/candidate/candidates/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"candidate",
+						"candidates",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjM5NTMxNDI1LCJqdGkiOiJiZDFhOTZmMzljNjI0NWI3YTM2YWQ3NjM5YjM5Yzk0NiIsInVzZXJfaWQiOjF9.FIAVwzD0BgNYesZrUj8iZvCJ56o-tHqBDOIoEYfDjNI",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/candidate/candidates/?age_lte=18",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"candidate",
+						"candidates",
+						""
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "es",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "ffernandofranciscocaldeira@lojascentrodamoda.com.br",
+							"disabled": true
+						},
+						{
+							"key": "salary_claim",
+							"value": "1258.00",
+							"disabled": true
+						},
+						{
+							"key": "is_immediate_availability_for_work",
+							"value": "false",
+							"disabled": true
+						},
+						{
+							"key": "age_gte",
+							"value": "54",
+							"disabled": true
+						},
+						{
+							"key": "age_lte",
+							"value": "18"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "token",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "nonato",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "n0n4t085",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/token/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"token",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer  eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjM5NTMyNTA5LCJqdGkiOiI1ZDc3ZTBmMGNhNmI0YjdhOWZjODEzMTY1Mzk2MWE4NiIsInVzZXJfaWQiOjF9.YNTmTnwNsLykSXdKwDNEPiIB6DOmGzvVhCHR5Wu9P6I",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/candidate/candidates/12/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"candidate",
+						"candidates",
+						"12",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
