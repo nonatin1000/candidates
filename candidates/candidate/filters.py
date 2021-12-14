@@ -1,5 +1,4 @@
 from django_filters import rest_framework as filters
-import django_filters
 from .models import Candidate
 
 

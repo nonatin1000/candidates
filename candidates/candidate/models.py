@@ -22,9 +22,3 @@ class Candidate(models.Model):
 
     class Meta:
         unique_together = ('cpf', 'email')
-        # constraints = [
-        #     models.CheckConstraint(
-        #         check=models.Q(age__gte=18),
-        #         name='age_gte_18'
-        #     ),
-        # ]
