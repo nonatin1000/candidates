@@ -48,4 +48,5 @@ Os candidatos desse teste possuem os seguintes atributos:
 
 - Pelo terminal criar um superuser para utilizar os dados já cadastrado no sqlit3.
 - Foi implementado a opção de filtrar por todos os campos
-
+- É possível ver a documentação da API acessando o endereço: http://localhost:8000/ pelo navegador.
+ 
