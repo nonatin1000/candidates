@@ -49,4 +49,7 @@ Os candidatos desse teste possuem os seguintes atributos:
 - Pelo terminal criar um superuser para utilizar os dados já cadastrado no sqlit3 e também é preciso está autenticado para realizar as requisições.
 - Foi implementado a opção de filtrar por todos os campos
 - É possível ver a documentação da API acessando o endereço: http://localhost:8000/ pelo navegador.
+- Para monitorar os logs fiz uso da bibliote newrelic onde é possível ter as métricas e logs da aplicação.
+![newrelic](https://user-images.githubusercontent.com/1080519/146029772-0c10553f-1125-4064-9bec-d514b77fc6f8.png)
+
  
