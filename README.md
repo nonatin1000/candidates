@@ -46,7 +46,7 @@ Os candidatos desse teste possuem os seguintes atributos:
 
 - Os endepoints utilizados no projeto estão na raiz do projeto com o nome Worc.postman_collection.json basta apenas importa no POSTMAN.
 
-- Pelo terminal criar um superuser para utilizar os dados já cadastrado no sqlit3.
+- Pelo terminal criar um superuser para utilizar os dados já cadastrado no sqlit3 e também é preciso está autenticado para realizar as requisições.
 - Foi implementado a opção de filtrar por todos os campos
 - É possível ver a documentação da API acessando o endereço: http://localhost:8000/ pelo navegador.
  
