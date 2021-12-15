@@ -3,6 +3,7 @@ from django.utils.translation import ugettext_lazy as _
 
 
 class Candidate(models.Model):
+    id = models.AutoField(primary_key=True)
     name = models.CharField(verbose_name=_("Nome"), max_length=100)
     email = models.EmailField(verbose_name=_("_E-mail"), unique=True)
     cpf = models.CharField(verbose_name=_("_CPF"), max_length=11, unique=True)
